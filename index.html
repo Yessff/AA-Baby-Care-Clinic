@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A&A Baby Care</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+
+    <div class="logo">
+
+      <img src="imagenes/logo.jpeg" alt="Logo">
+
+      <div>
+        <h1>A&A Baby Care</h1>
+        <p>Pequeñas sonrisas, grandes cuidados.</p>
+      </div>
+
+    </div>
+
+    <nav>
+
+      <button onclick="showPage('home')">
+        Inicio
+      </button>
+
+      <button onclick="showPage('services')">
+        Servicios
+      </button>
+
+      <button onclick="showPage('appointments')">
+        Citas
+      </button>
+
+      <button onclick="showPage('contact')">
+        Contacto
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+
+    <div class="hero">
+
+      <div class="hero-text">
+
+        <span class="badge">
+          Clínica Pediátrica y Neonatal
+        </span>
+
+        <h2>
+          Atención médica
+          <span>moderna y segura</span>
+        </h2>
+
+        <p>
+          Cuidamos a los pequeños con amor,
+          tecnología y atención especializada.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button onclick="showPage('appointments')">
+            Agendar cita
+          </button>
+
+          <button class="secondary"
+            onclick="showPage('services')">
+            Ver servicios
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- IA STYLE -->
+      <div class="ai-image">
+
+        <img
+          src="imagenes/image.png"
+          alt="Doctor IA">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="services" class="page">
+
+    <h2 class="title">
+      Nuestros Servicios
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Pediatría</h3>
+        <p>
+          Consultas médicas y chequeos preventivos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Neonatología</h3>
+        <p>
+          Atención especializada para recién nacidos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Vacunación</h3>
+        <p>
+          Control completo de vacunas infantiles.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Emergencias</h3>
+        <p>
+          Atención rápida y segura.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CITAS -->
+<section id="appointments" class="page">
+
+  <h2 class="title">
+    Agenda tu cita
+  </h2>
+
+  <form id="appointmentForm">
+
+    <input type="text"
+      placeholder="Nombre del paciente"
+      required>
+
+    <input type="text"
+      placeholder="Nombre del encargado"
+      required>
+
+    <input type="email"
+      placeholder="Correo electrónico"
+      required>
+
+    <!-- NUEVO -->
+    <input type="tel"
+      placeholder="Número de teléfono"
+      required>
+
+    <input type="date"
+      required>
+
+    <select required>
+
+      <option value="">
+        Seleccione servicio
+      </option>
+
+      <option>Pediatría</option>
+      <option>Neonatología</option>
+      <option>Vacunación</option>
+      <option>Otro</option>
+
+    </select>
+
+    <textarea
+      placeholder="Motivo de consulta"
+      required></textarea>
+
+    <button type="submit">
+      Confirmar cita
+    </button>
+
+  </form>
+
+  <!-- MENSAJE -->
+  <div id="successMessage" class="success-message">
+
+    Gracias por confiar en A&A Baby Care 
+    Hemos recibido tu solicitud correctamente.
+    Muy pronto te llamaremos para confirmar
+    la fecha y hora de tu cita médica.
+
+  </div>
+
+</section>
+
+ <!-- CONTACTO -->
+<section id="contact" class="page">
+
+  <h2 class="title">
+    Contáctanos
+  </h2>
+
+  <div class="contact-container">
+
+    <div class="contact-box">
+
+      <p>
+        📞 +502 2411 0900
+      </p>
+
+      <p>
+        📍 Zona 10, Ciudad de Guatemala
+      </p>
+
+      <p>
+        🕒 Lunes a Viernes
+        8:00AM - 6:00PM
+      </p>
+
+    </div>
+
+    <!-- MAPA CENTRADO -->
+
+    <div class="map-container">
+
+      <iframe
+        src="https://www.google.com/maps?q=Zona+10+Guatemala&output=embed"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
