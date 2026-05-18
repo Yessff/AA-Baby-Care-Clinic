@@ -144,8 +144,8 @@ nav button:hover{
   color:#eeb7ff !important;
 }
 
-.doctor {
-  width:450px;
+.doctor img{
+  width:500px;
   animation:float 4s ease-in-out infinite;
 }
 
